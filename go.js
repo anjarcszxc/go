@@ -1,5 +1,5 @@
 var Base64 = {
-    _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+    _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
     encode: function (input) {
         var output = "";
         var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
@@ -106,7 +106,7 @@ function auto_safeconvert() {
     var a_to_vd = window.location.hostname;
     if (protected_links != "" && !protected_links.match(a_to_vd)) {
         protected_links += ", " + a_to_vd;
-    } else if (protected_links == "") {
+    } else if (protected_links "") {
         protected_links = a_to_vd;
     }
     var a_to_ve = "";
