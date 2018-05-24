@@ -106,7 +106,7 @@ function auto_safeconvert() {
     var a_to_vd = window.location.hostname;
     if (protected_links != "" && !protected_links.match(a_to_vd)) {
         protected_links += ", " + a_to_vd;
-    } else if (protected_links "") {
+    } else if (protected_links == "") {
         protected_links = a_to_vd;
     }
     var a_to_ve = "";
